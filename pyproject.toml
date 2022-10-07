@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ftpclient"
+version = "0.1.0"
+description = ""
+authors = ["Markus Iorio <mbalzert@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+flake8 = "^5.0.4"
+mypy = "^0.982"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
