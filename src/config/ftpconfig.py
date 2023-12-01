@@ -13,6 +13,4 @@ class FTPConfig:
         self.ftp_port = self.set_port(port)
 
     def set_port(self, value):
-        if value:
-            return value
-        return self.ftp_type.value
+        return value if value else self.ftp_type.value
